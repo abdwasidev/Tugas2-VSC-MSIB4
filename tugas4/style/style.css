@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,200;0,400;0,700;1,400&display=swap");
+
+:root {
+  --black-color: #333333;
+  --red-color: rgba(255, 55, 55, 0.75);
+  --white-color: rgba(255, 255, 255, 0.87);
+  --soft-color: #f2f5ff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Albert Sans", sans-serif;
+  background-color: var(--white-color);
+  color: var(--black-color);
+  text-align: center;
+  height: auto;
+  overflow: auto;
+}
+
+a {
+  color: var(--black-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: var(--red-color);
+}
+
+/* HEADER */
+header {
+  background-color: var(--soft-color);
+}
+
+header nav ul a {
+  background-color: var(--white-color);
+  color: var(--black-color);
+  padding: 8px 0;
+  border-radius: 8px;
+}
+
+header nav ul a:hover {
+  background-color: var(--black-color);
+  color: var(--soft-color);
+  padding: 8px 0;
+  border-radius: 8px;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 20px;
+}
+
+h1 {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* JUMBOTRON */
+.jumbotron {
+  background: url(../img/GenshinImpact3_4.jpg) no-repeat center center fixed;
+  background-size: cover;
+  width: auto;
+  height: 400px;
+}
+
+.jumbotron h1 {
+  text-align: center;
+  color: var(--soft-color);
+  padding: 10px;
+}
+
+/* ARTICLE and SIDEBAR */
+.center {
+  text-align: center;
+}
+
+.content {
+  margin: 20px 30px;
+  padding: 20px;
+}
+
+.blog-articles {
+  float: left;
+  width: 60%;
+  margin-bottom: 30px;
+}
+
+.articles {
+  text-align: left;
+}
+
+.articles div a {
+  padding: 15px;
+}
+
+.sidebar {
+  float: right;
+  width: 30%;
+}
+
+.item > * {
+  width: 100%;
+  background-color: var(--soft-color);
+  color: var(--black-color);
+  padding: 10px 0;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  padding: 20px 0;
+  background-color: var(--soft-color);
+  clear: both;
+}
